@@ -23,7 +23,12 @@ document.querySelectorAll('.expand-btn').forEach(button => {
     }
   });
 });
+const hamburger = document.querySelector('.navbar .hamburger');
+const navbar = document.querySelector('.navbar');
 
+hamburger.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+});
 let currentIndexUnity = 0;  
 let currentIndexWebsite = 0; 
 
@@ -110,7 +115,3 @@ document.addEventListener("DOMContentLoaded", function() {
   updateCarousel('unity');
   updateCarousel('website');
 });
-
-
-
-
