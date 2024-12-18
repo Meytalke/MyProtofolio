@@ -1,4 +1,10 @@
 /* General Styles */
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -18,8 +24,8 @@ body {
   position: fixed;
   left: 0;
   width: 100%;
-  position: relative; /* מאפשר להציב את ההמבורגר מעל */
-  z-index: 2; /* לוודא שהתפריט לא יסתיר דברים */
+  position: relative;
+  z-index: 2;
 }
 
 .navbar h1 {
@@ -145,8 +151,8 @@ body {
 }
 
 .github-link i {
-  font-size: 40px;  /* הגדרת גודל האייקון */
-  color: #000;      /* צבע האייקון */
+  font-size: 40px; 
+  color: #000;  
 }
 
 .github-link img:hover {
@@ -541,8 +547,14 @@ footer {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
   .navbar {
-      flex-direction: column; 
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
       padding: 1rem;
       background-color: #333;
   }
@@ -553,7 +565,14 @@ footer {
       gap: 1rem;
       width: 100%;
   }
+  .navbar h1 {
+    font-size: 1.5rem; 
+}
 
+.content {
+    width: 100%;
+    padding: 1rem; 
+}
   .navbar .hamburger {
       display: block;
       font-size: 2rem;
@@ -710,10 +729,8 @@ footer {
     align-items: center;
     text-align: center;
   }
-
   .footer-right ul {
     flex-direction: column;
     gap: 0.5rem;
   }
 }
-
