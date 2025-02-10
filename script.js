@@ -5,7 +5,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
   const emailOrPhone = document.getElementById("email").value;
   const message = document.getElementById("message").value;
 
-  const emailContent = `Name: ${name}\nEmail/Phone: ${emailOrPhone}\nMessage: ${message}`;
+  const emailContent = `Name: ${name}\nEmail: ${emailOrPhone}\nMessage: ${message}`;
   const mailtoLink = `mailto:meytalkeren@gmail.com?subject=New Message from ${name}&body=${encodeURIComponent(emailContent)}`;
 
   window.location.href = mailtoLink;
