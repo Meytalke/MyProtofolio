@@ -50,7 +50,7 @@ const unityProjectsData = [
 const websiteProjectsData = [
   {
       github: "https://github.com/Meytalke/harrypotterweb",
-      web: "https://harrypotterweb.w3spaces.com/"
+      web: "https://meytalke.github.io/harrypotterweb/"
   },
   {
       github: "",
